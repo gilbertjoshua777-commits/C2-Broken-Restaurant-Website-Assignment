@@ -41,6 +41,16 @@ body {
     gap: 20px;
 }
 
+#content {
+    align-items: flex-start;
+}
+
+#content > main,
+#content > aside {
+    flex: 1;
+    min-width: 0;
+}
+
 
 
 #footer {
@@ -52,7 +62,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     #content {
         flex-direction: column;
     }
