@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header */
 #header {
     background-color: #333333;
     color: #ffffff;
@@ -19,7 +20,7 @@ body {
 
 
 
-
+/* Navigation */
 #nav {
     background-color: #444444;
     color: #ffffff;
@@ -33,6 +34,8 @@ body {
     text-decoration: none;
 }
 
+
+/* Main Content Layout */
 #content {
     display: flex;
     max-width: 800px;
@@ -52,7 +55,7 @@ body {
 }
 
 
-
+/* Footer */
 #footer {
     clear: both;
     background-color: #333333;
