@@ -17,7 +17,10 @@ body {
         border-radius: 4px;
         }
 
-
+#header img {
+    width: 200px;
+    height: auto;
+}
 
 
 /* Navigation */
@@ -33,6 +36,13 @@ body {
     margin: 0 15px;
     text-decoration: none;
 }
+
+#content img,
+#main-content img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* Main Content Layout */
