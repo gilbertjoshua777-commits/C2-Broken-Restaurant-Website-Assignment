@@ -3,7 +3,8 @@ const categories = document.querySelectorAll(".menu-category");
 categories.forEach(category => {
     category.addEventListener("click", () => {
         const selectedItems = menuItems[category.dataset.category];
-   
+        const selectedCategory = document.getElementById(category.dataset.category);
+       
         selectedItems.forEach(item => {
     console.log(item);
     }); 
