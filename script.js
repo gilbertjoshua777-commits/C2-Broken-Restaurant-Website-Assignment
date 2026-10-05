@@ -2,7 +2,12 @@ const categories = document.querySelectorAll(".menu-category");
 
 categories.forEach(category => {
     category.addEventListener("click", () => {
-    });
+        const selectedItems = menuItems[category.dataset.category];
+   
+        selectedItems.forEach(item => {
+    console.log(item);
+    }); 
+});
 });
 
 const appetizers = [
@@ -36,3 +41,10 @@ const desserts = [
     "Cheesecake",
     "Scoop of Ice Cream"
 ];
+
+const menuItems = {
+    appetizers: appetizers,
+    entrees: entrees,
+    beverages: drinks,
+    desserts: desserts
+};
