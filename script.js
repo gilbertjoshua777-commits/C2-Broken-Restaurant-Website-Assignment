@@ -4,10 +4,14 @@ categories.forEach(category => {
     category.addEventListener("click", () => {
         const selectedItems = menuItems[category.dataset.category];
         const selectedCategory = document.getElementById(category.dataset.category);
-       
+       const menuList = document.createElement("ul");
+
         selectedItems.forEach(item => {
-    console.log(item);
-    }); 
+            const menuItem = document.createElement("li");
+            menuItem.textContent = item;
+            menuList.appendChild(menuItem);
+        }); 
+        selectedCategory.appendChild(menuList);
 });
 });
 
