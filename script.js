@@ -4,7 +4,19 @@ categories.forEach(category => {
     category.addEventListener("click", () => {
         const selectedItems = menuItems[category.dataset.category];
         const selectedCategory = document.getElementById(category.dataset.category);
-       const menuList = document.createElement("ul");
+       
+        const existingList = selectedCategory.querySelector("ul")
+
+        document.querySelectorAll("ul").forEach(ul => {ul.remove();
+
+        });
+
+        if (existingList) {
+            return;
+        }
+
+        const menuList = document.createElement("ul");
+
 
         selectedItems.forEach(item => {
             const menuItem = document.createElement("li");
