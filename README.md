@@ -4,6 +4,8 @@
 
 This project is a responsive multi-page restaurant website built with HTML and CSS. The website includes a home page, menu page, and contact page.
 
+Originally created as a class project, this site was subsequently enhanced with JavaScript to add interactive menu-category functionality. 
+
 ## Improvements Made
 
 * Added responsive layouts using Flexbox and media queries
@@ -14,6 +16,7 @@ This project is a responsive multi-page restaurant website built with HTML and C
 * Added a dedicated Contact page
 * Added viewport meta tags for mobile responsiveness
 * Validated HTML and CSS code
+* Added JavaScript functionality to display menu items by category
 
 ## Tools Used
 
